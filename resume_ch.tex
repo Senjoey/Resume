@@ -1,0 +1,94 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{谭琼}
+
+\basicInfo{
+  \email{MF1832143@smail.nju.edu.cn} \textperiodcentered\
+  \phone{135-8517-8653} }
+
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{南京大学}, 南京}{2018 -- 至今}
+\textit{女 / 1996 /在读硕士研究生}\ 软件工程, 预计 2020 年 6 月毕业
+\datedsubsection{\textbf{南京大学}, 南京}{2014 -- 2018}
+\textit{学士}\ 软件工程
+
+\section{\faUsers\ 项目经历}
+
+\datedsubsection{\textbf{基于K线型态的股票量化分析系统 Web项目}}{2018 年3月 -- 5月}
+\role{HTML+CSS+JavaScript, Python}  {个人项目}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 作为毕业设计，项目主要功能有筛选股票池、添加自选股、回测和策略设置，为投资者的选股提供建议，推荐优质股票，也供投资者自定义策略参数
+  \item 项目整体采用Django框架，后端使用Python实现
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{看板项目 Web项目}}{2017 年6月 -- 8月}
+\role{jsp+CSS+JavaScript, Java}  {实习}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 该项目的目标用户为公司内部人员，用户可以在看板上跟踪管理当前项目的进度
+  \item 项目前端采用AngularJS框架，后端使用Java实现
+  \item 负责前端部分
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{酒店管理系统 J2EE项目}}{2017 年3月}
+\role{jsp+CSS+JavaScript, Java}  {个人项目}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 作为课程作业，项目有三个角色：会员（注册、激活）、客栈（申请开店、发布计划）、经理（审核申请，会员结算，查看统计信息）
+  \item 整体采用MVC架构，jsp实现view层，Servlet实现controller层。jsp通过AJAX异步提交请求到Servlet，Servlet负责相应请求产生的数据，把数据带给jsp。
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{AnyQuant股票数据分析系统 Java桌面应用}}{2016 年4月 -- 6月}
+\role{Java}  {团队项目}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 作为课程作业，对股票数据进行分析、预测
+  \item 项目采用三层架构，分为界面层、业务逻辑层和数据访问层
+  \item 主要负责大部分的界面，使用了Java FX技术
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{快递物流系统 Java桌面应用}}{2015 年10月 -- 12月}
+\role{Java}  {团队项目}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 作为课程作业，模拟了快递从产生订单到收货的整个流程
+  \item 项目采用分层架构
+  \item 主要负责数据层以及逻辑层的实现。数据层使用文件进行持久化，通信采用RMI技术
+\end{itemize}
+\end{onehalfspacing}
+
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: 熟悉HTML, CSS, JavaScript, Java等
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
